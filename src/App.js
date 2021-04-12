@@ -1,14 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import { connect } from 'react-redux'
+import { fetchPictures } from './actions/fetchPictures'
 
 class App extends React.Component {
   componentDidMount() {
-    fetch('http://localhost:3000/api/v1/pictures/', {
-      method: 'GET'
-    })
-      .then(response => response.json())
-      .then(data => console.log(data))
+    this.props.fetchPictures()
   }
 
   render() {
@@ -20,4 +17,5 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default connect(null, { fetchPictures })(App)
+
