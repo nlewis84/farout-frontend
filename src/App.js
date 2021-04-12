@@ -16,6 +16,7 @@ class App extends React.Component {
     return (
       <div className="App" >
         App
+        {/* write a map over this.props.pictures to create the two PictureCardContainers */}
         {/* <PictureCardContainer picture={this.props.pictures[0]} /> */}
         {/* <PictureCardContainer picture={this.props.pictures[1]} /> */}
       </div>
