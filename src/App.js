@@ -6,6 +6,8 @@ import { fetchPictures } from './actions/fetchPictures'
 
 class App extends React.Component {
 
+  debugger
+
   componentDidMount() {
     this.props.fetchPictures()
   }
@@ -14,8 +16,8 @@ class App extends React.Component {
     return (
       <div className="App" >
         App
-        <PictureCardContainer picture={this.props.pictures[0]} />
-        <PictureCardContainer picture={this.props.pictures[1]} />
+        {/* <PictureCardContainer picture={this.props.pictures[0]} /> */}
+        {/* <PictureCardContainer picture={this.props.pictures[1]} /> */}
       </div>
     );
   }

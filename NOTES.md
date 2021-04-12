@@ -22,4 +22,4 @@ App
         ImageInformation 
             ImageTitle 
             ImageDate
-            ImageDescription 
+            ImageExplanation 
