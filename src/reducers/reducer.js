@@ -1,7 +1,7 @@
-export default function reducer(state = {}, action) {
+export default function reducer(state = { pictures: [] }, action) {
     switch (action.type) {
-        case 'START_ADDING_PICTURES_REQUEST':
-            return {}
+        case 'FETCH_PICTURES':
+            return { pictures: action.payload }
         case 'INCREASE_COUNT':
             return { count: state.count + 1 }
         case 'DECREASE_COUNT':
