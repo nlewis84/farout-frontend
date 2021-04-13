@@ -20,9 +20,6 @@ App
             VoteButton 
             VoteCounter
         ImageInformation 
-            ImageTitle 
-            ImageDate
-            ImageExplanation 
 
 
 

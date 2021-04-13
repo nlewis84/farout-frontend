@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import Image from '../components/Image';
-
+import ImageInformation from '../components/ImageInformation';
+import VoteInterfaceContainer from '../containers/VoteInterfaceContainer';
 
 class PictureCardContainer extends Component {
 
     render() {
         return (
             <div>
-                picture card container
-                <Image picture={this.props.picture} />
+                <Image key={this.props.index} picture={this.props.picture} />
+                <ImageInformation key={this.props.index} picture={this.props.picture} />
+                <VoteInterfaceContainer key={this.props.index} vote={this.props.picture.vote} />
             </div>
         )
     }

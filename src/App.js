@@ -23,8 +23,8 @@ class App extends React.Component {
         <div className="App" >
           <h1>FAR OUT</h1>
           <div>
-            {this.props.pictures.map(picture =>
-              <PictureCardContainer picture={picture} />
+            {this.props.pictures.map((picture, index) =>
+              <PictureCardContainer key={index} picture={picture} />
             )}
           </div>
         </div>

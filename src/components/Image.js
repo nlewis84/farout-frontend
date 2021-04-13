@@ -4,8 +4,7 @@ const Image = props => {
 
     return (
         <div>
-            Image
-            <img src={props.picture.url} />
+            <img src={props.picture.url} style={{ width: 200 }} alt={props.picture.title} />
         </div>
     )
 }
