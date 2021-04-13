@@ -7,7 +7,6 @@ class VoteInterfaceContainer extends Component {
     render() {
         return (
             <div>
-                vote interface container
                 <VoteButton vote={this.props.vote} />
                 <VoteCounter vote={this.props.vote} />
             </div>
