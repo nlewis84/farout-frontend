@@ -21,5 +21,6 @@ App
             VoteCounter
         ImageInformation 
 
-
+routes are in #7
+unpermitted parameter :pictureId on VoteButton....should be :picture_id
 
