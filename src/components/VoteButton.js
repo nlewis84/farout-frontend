@@ -17,9 +17,20 @@ class VoteButton extends Component {
 
     handleClick = () => {
         // debugger
-        this.setState({ ...this.state, vote: { ...this.state.vote, count: this.state.vote.count + 1 } }, () => {
-            this.props.increaseVoteCount(this.state);
+        this.setState({
+            ...this.state,
+            vote: {
+                ...this.state.vote,
+                count: this.state.vote.count + 1
+            }
         })
+        debugger
+        this.props.increaseVoteCount(this.state)
+
+        // debugger
+        // this.setState({ ...this.state, vote: { ...this.state.vote, count: this.state.vote.count + 1 } }, () => {
+        //     this.props.increaseVoteCount(this.state);
+        // })
         // debugger
     }
 
