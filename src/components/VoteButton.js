@@ -3,21 +3,25 @@ import { connect } from 'react-redux';
 import { increaseVoteCount } from '../actions/increaseVoteCount';
 
 class VoteButton extends Component {
-    // constructor(props) {
-    //     super(props);
+    constructor(props) {
+        super(props);
 
-    //     this.state = {
-    //         count: props.vote.count,
-    //         playerId: props.vote.playerId
-    //     };
-    // }
+        this.state = {
+            vote: {
+                count: props.vote.count,
+                pictureId: props.vote.picture_id
+            }
+        };
+        // debugger
+    }
 
-    // handleClick = (event) => {
-    //     const newCount = this.state.count + 1
-    //     this.setState({
-    //         count: newCount
-    //     })
-    // }
+    handleClick = () => {
+        // debugger
+        this.setState({ ...this.state, vote: { ...this.state.vote, count: this.state.vote.count + 1 } }, () => {
+            this.props.increaseVoteCount(this.state);
+        })
+        // debugger
+    }
 
 
 

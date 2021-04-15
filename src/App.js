@@ -11,26 +11,26 @@ class App extends React.Component {
   }
 
   render() {
-    if (!this.props.pictures.length) {
-      return (
-        <div className="App" >
-          <h1>FAR OUT</h1>
-          <h2>Loading...</h2>
+    // if (!this.props.pictures.length) {
+    //   return (
+    //     <div className="App" >
+    //       <h1>FAR OUT</h1>
+    //       <h2>Loading...</h2>
+    //     </div>
+    //   )
+    // } else {
+    return (
+      <div className="App" >
+        <h1>FAR OUT</h1>
+        <div>
+          {this.props.pictures.map((picture, index) =>
+            <PictureCardContainer key={index} picture={picture} />
+          )}
         </div>
-      )
-    } else {
-      return (
-        <div className="App" >
-          <h1>FAR OUT</h1>
-          <div>
-            {this.props.pictures.map((picture, index) =>
-              <PictureCardContainer key={index} picture={picture} />
-            )}
-          </div>
-        </div>
-      );
-    }
+      </div>
+    );
   }
+  // }
 }
 
 const mapStateToProps = state => {
