@@ -3,7 +3,7 @@ import React from 'react';
 const VoteCounter = props => {
 
     return (
-        <div>
+        <div className="counter-container">
             <p className="counter">
                 {props.vote.count} votes
             </p>
