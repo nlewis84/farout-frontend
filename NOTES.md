@@ -22,5 +22,9 @@ App
         ImageInformation 
 
 routes are in #7
-unpermitted parameter :pictureId on VoteButton....should be :picture_id
 
+container - 
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+grid-gap: 4rem;
+padding: 4rem;

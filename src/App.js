@@ -11,19 +11,11 @@ class App extends React.Component {
   }
 
   render() {
-    // if (!this.props.pictures.length) {
-    //   return (
-    //     <div className="App" >
-    //       <h1>FAR OUT</h1>
-    //       <h2>Loading...</h2>
-    //     </div>
-    //   )
-    // } else {
     // debugger
     return (
       <div className="App" >
-        <h1>FAR OUT</h1>
-        <div>
+        <h1 id="title">FAR OUT</h1>
+        <div className="container">
           {this.props.pictures.map((picture, index) =>
             <PictureCardContainer key={index} picture={picture} />
           )}
@@ -31,7 +23,6 @@ class App extends React.Component {
       </div>
     );
   }
-  // }
 }
 
 const mapStateToProps = state => {

@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #D0E3FF;
+}
+
+#title {
+  font-size: 64px;
+  color: #5F008B;
+  filter: drop-shadow(-.2rem .2rem .3rem #F919C7)
+}
+
+div.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  padding: 4rem;
+}
+
+img.image {
+  width: 75%;
+}
+
+div.information {
+  padding: 1rem;
+}

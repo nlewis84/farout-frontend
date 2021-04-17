@@ -13,7 +13,7 @@ class VoteButton extends Component {
         // debugger
     }
 
-    // componentDidUpdate(prevProps, preveState) {
+    // componentDidUpdate(prevProps, prevState) {
     //     console.log("Component did update")
     // }
 
