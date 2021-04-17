@@ -4,7 +4,7 @@ const VoteCounter = props => {
 
     return (
         <div>
-            <p>
+            <p className="counter">
                 {props.vote.count} votes
             </p>
         </div>

@@ -51,13 +51,36 @@ div.container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
-  padding: 4rem;
+  padding: 0 4rem 4rem;
+}
+
+div.picture-card-container {
+  background-color: #FFF;
+  border-radius: 5px;
+  filter: drop-shadow(0 .4rem .3rem rgba(0, 0, 0, .50))
 }
 
 img.image {
-  width: 75%;
+  width: 90%;
+  padding: 1.25rem 0;
 }
 
 div.information {
-  padding: 1rem;
+  padding: 0 1rem 1rem;
+}
+
+div.vote-interface {
+  padding: 1rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+button {
+  align-items: center;
+  margin: 0 0 0 20px;
+  width: 100%;
+}
+
+p.counter {
+  margin: 0;
 }
