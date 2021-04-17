@@ -7,31 +7,25 @@ class VoteButton extends Component {
         super(props);
 
         this.state = {
-            vote: {
-                count: props.vote.count,
-                pictureId: props.vote.picture_id
-            }
+            count: '',
+            pictureId: props.vote.picture_id
         };
         // debugger
     }
+
+    // componentDidUpdate(prevProps, preveState) {
+    //     console.log("Component did update")
+    // }
 
     handleClick = () => {
         // debugger
         this.setState({
             ...this.state,
-            vote: {
-                ...this.state.vote,
-                count: this.state.vote.count + 1
-            }
+            count: this.props.vote.count + 1
+        }, () => {
+            this.props.increaseVoteCount(this.state);
+            // debugger
         })
-        debugger
-        this.props.increaseVoteCount(this.state)
-
-        // debugger
-        // this.setState({ ...this.state, vote: { ...this.state.vote, count: this.state.vote.count + 1 } }, () => {
-        //     this.props.increaseVoteCount(this.state);
-        // })
-        // debugger
     }
 
 

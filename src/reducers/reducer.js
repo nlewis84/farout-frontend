@@ -6,7 +6,8 @@ export default function reducer(state = { pictures: [] }, action) {
             return { pictures: action.payload }
         case 'INCREASE_COUNT':
             // debugger
-            return { ...state, pictures: [...state.pictures, action.payload] }
+            return { pictures: action.payload }
+        // return { ...state, pictures: [...state.pictures, action.payload] }
         default:
             return state;
     }

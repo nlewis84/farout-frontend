@@ -19,6 +19,7 @@ class App extends React.Component {
     //     </div>
     //   )
     // } else {
+    // debugger
     return (
       <div className="App" >
         <h1>FAR OUT</h1>
