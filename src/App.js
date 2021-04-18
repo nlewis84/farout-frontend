@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PictureCardContainer from './containers/PictureCardContainer';
 import AppTitle from './components/AppTitle';
 import { fetchPictures } from './actions/fetchPictures';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 class App extends React.Component {
 
@@ -16,6 +16,11 @@ class App extends React.Component {
     // debugger
     return (
       <div className="App" >
+        <div>
+          <Link className="large-button" to="/vote">Vote</Link>
+          <Link className="large-button" to="/top5">Top Five</Link>
+          <Link className="large-button" to="/newest">Newest</Link>
+        </div>
         <AppTitle />
         <Route path='/vote'>
           <div className="container">
@@ -24,8 +29,20 @@ class App extends React.Component {
             )}
           </div>
         </Route>
-        <Route path='/best'></Route>
-        <Route path='/newest'></Route>
+        <Route path='/top5'>
+          <div className="container">
+            {this.props.pictures.map((picture, index) =>
+              <PictureCardContainer key={index} picture={picture} />
+            )}
+          </div>
+        </Route>
+        <Route path='/newest'>
+          <div className="container">
+            {this.props.pictures.map((picture, index) =>
+              <PictureCardContainer key={index} picture={picture} />
+            )}
+          </div>
+        </Route>
       </div>
     );
   }
