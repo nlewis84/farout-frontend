@@ -23,13 +23,3 @@ App
 
 routes are in #7
 
-
-set css variables to below and codify text size
-3.052rem/64.09px
-2.441rem/51.27px
-1.953rem/41.02px
-1.563rem/32.81px
-1.25rem/26.25px
-1rem/21.00px	
-
-Try to get picture size to be smaller and also center the picture-card-containers when you do.
