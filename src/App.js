@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import { connect } from 'react-redux';
 import PictureCardContainer from './containers/PictureCardContainer';
+import AppTitle from './components/AppTitle';
 import { fetchPictures } from './actions/fetchPictures'
 
 class App extends React.Component {
@@ -14,7 +15,8 @@ class App extends React.Component {
     // debugger
     return (
       <div className="App" >
-        <h1 id="title">FAR OUT</h1>
+        <AppTitle />
+        {/* <h1 id="title">FAR OUT</h1> */}
         <div className="container">
           {this.props.pictures.map((picture, index) =>
             <PictureCardContainer key={index} picture={picture} />

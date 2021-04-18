@@ -4,7 +4,7 @@ const AppTitle = () => {
 
     return (
         <div>
-            FAR OUT
+            <h1 id="title">FAR OUT</h1>
         </div>
     )
 }
