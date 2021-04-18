@@ -1,3 +1,14 @@
+:root {
+  --size1: 67.34px;
+  --size2: 50.52px;
+  --size3: 37.90px;
+  --size4: 28.43px;
+  --size5: 21.33px;
+  --size6: 16px;
+  --size7: 12px;
+  --size8: 9px;
+}
+
 .App {
   text-align: center;
 }
@@ -44,7 +55,7 @@ body {
 
 #title {
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 64px;
+  font-size: var(--size1);
   color: #5F008B;
   filter: drop-shadow(-3px 3px 3px #F919C7)
 }
@@ -67,11 +78,23 @@ img.image {
   width: 100%;
   object-fit: cover;
   margin: 0 0 1rem 0;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
 }
 
 div.information {
   padding: 0 1rem 1rem;
+}
+
+h2 {
+  font-size: var(--size4);
+}
+
+h3 {
+  font-size: var(--size6);
+}
+
+p {
+  font-size: var(--size6);
 }
 
 div.information h2, div.information h3 {
@@ -80,6 +103,8 @@ div.information h2, div.information h3 {
 
 div.information p {
   text-align: justify;
+  font-size: var(--size6);
+  line-height: 1.75rem;
 }
 
 div.vote-interface {
@@ -89,7 +114,7 @@ div.vote-interface {
 
 button {
   align-items: center;
-  font-size: 16px;
+  font-size: var(--size5);
   margin: 0 0 0 1rem;
   width: 100%;
   height: 2.5rem;
