@@ -8,7 +8,6 @@ class VotePictures extends React.Component {
         this.props.fetchPictures()
     }
 
-
     render() {
         // debugger
         return (

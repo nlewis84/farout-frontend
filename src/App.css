@@ -57,7 +57,13 @@ body {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: var(--size1);
   color: #5F008B;
-  filter: drop-shadow(-3px 3px 3px #F919C7)
+  filter: drop-shadow(-3px 3px 3px #F919C7);
+  margin: 3rem 0 0 0;
+}
+
+p.tagline {
+  color: #5F008B;
+  filter: drop-shadow(-3px 3px 15px #5F008B);
 }
 
 div.container {

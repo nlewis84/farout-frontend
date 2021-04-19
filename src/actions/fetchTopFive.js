@@ -6,5 +6,3 @@ export function fetchTopFive() {
             .then(pictures => dispatch({ type: 'FETCH_TOP_FIVE', payload: pictures }));
     };
 }
-
-

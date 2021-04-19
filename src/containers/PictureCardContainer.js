@@ -4,7 +4,6 @@ import ImageInformation from '../components/ImageInformation';
 import VoteInterfaceContainer from '../containers/VoteInterfaceContainer';
 
 class PictureCardContainer extends Component {
-
     render() {
         return (
             <div className="picture-card-container">

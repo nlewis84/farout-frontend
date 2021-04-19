@@ -3,7 +3,6 @@ import VoteButton from '../components/VoteButton';
 import VoteCounter from '../components/VoteCounter';
 
 class VoteInterfaceContainer extends Component {
-
     render() {
         return (
             <div className="vote-interface">

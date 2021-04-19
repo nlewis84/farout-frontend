@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import AppTitle from './components/AppTitle';
+import AppTagline from './components/AppTagline';
 import TopFivePictures from './components/TopFivePictures';
 import NewestPictures from './components/NewestPictures';
 import VotePictures from './components/VotePictures';
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Link className="large-button" to="/newest">Newest</Link>
         </div>
         <AppTitle />
+        <AppTagline />
         <Route path='/vote' component={VotePictures} />
         <Route path='/top5' component={TopFivePictures} />
         <Route path='/newest' component={NewestPictures} />

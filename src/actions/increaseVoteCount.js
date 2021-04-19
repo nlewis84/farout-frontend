@@ -13,6 +13,3 @@ export const increaseVoteCount = (data) => {
             .then(picture => dispatch({ type: 'INCREASE_COUNT', payload: picture }));
     };
 }
-
-
-

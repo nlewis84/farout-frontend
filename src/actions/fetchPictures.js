@@ -5,5 +5,3 @@ export function fetchPictures() {
             .then(pictures => dispatch({ type: 'FETCH_PICTURES', payload: pictures }));
     };
 }
-
-

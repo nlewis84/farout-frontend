@@ -24,8 +24,6 @@ class VoteButton extends Component {
         })
     }
 
-
-
     render() {
         return (
             <div>

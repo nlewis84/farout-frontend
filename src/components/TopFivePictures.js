@@ -8,7 +8,6 @@ class TopFivePictures extends React.Component {
         this.props.fetchTopFive()
     }
 
-
     render() {
         // debugger
         return (
