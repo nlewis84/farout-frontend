@@ -31,15 +31,8 @@ class App extends React.Component {
             )}
           </div>
         </Route>
-        <Route path='/top5'>
-
-          <TopFivePictures />
-        </Route>
-        <Route path='/newest'>
-          <div className="container">
-            <NewestPictures />
-          </div>
-        </Route>
+        <Route path='/top5' component={TopFivePictures} />
+        <Route path='/newest' component={NewestPictures} />
       </div>
     );
   }
