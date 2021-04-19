@@ -1,6 +1,7 @@
-export function fetchPictures() {
+export function fetchTopFive() {
     return (dispatch) => {
-        fetch('http://localhost:3000/api/v1/pictures')
+        // debugger
+        fetch('http://localhost:3000/api/v1/pictures/top')
             .then(response => response.json())
             .then(pictures => dispatch({ type: 'FETCH_TOP_FIVE', payload: pictures }));
     };

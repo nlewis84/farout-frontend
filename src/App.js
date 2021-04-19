@@ -3,6 +3,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PictureCardContainer from './containers/PictureCardContainer';
 import AppTitle from './components/AppTitle';
+import TopFivePictures from './components/TopFivePictures';
+import NewestPictures from './components/NewestPictures';
 import { fetchPictures } from './actions/fetchPictures';
 import { Route, Link } from 'react-router-dom';
 
@@ -30,17 +32,12 @@ class App extends React.Component {
           </div>
         </Route>
         <Route path='/top5'>
-          <div className="container">
-            {this.props.pictures.map((picture, index) =>
-              <PictureCardContainer key={index} picture={picture} />
-            )}
-          </div>
+
+          <TopFivePictures />
         </Route>
         <Route path='/newest'>
           <div className="container">
-            {this.props.pictures.map((picture, index) =>
-              <PictureCardContainer key={index} picture={picture} />
-            )}
+            <NewestPictures />
           </div>
         </Route>
       </div>

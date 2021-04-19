@@ -7,7 +7,11 @@ export default function reducer(state = { pictures: [] }, action) {
         case 'INCREASE_COUNT':
             // debugger
             return { pictures: action.payload }
-        // return { ...state, pictures: [...state.pictures, action.payload] }
+        case 'FETCH_TOP_FIVE':
+            // debugger
+            return { pictures: action.payload }
+        case 'FETCH_NEWEST':
+            return { pictures: action.payload }
         default:
             return state;
     }
