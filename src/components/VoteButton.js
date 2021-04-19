@@ -13,10 +13,6 @@ class VoteButton extends Component {
         // debugger
     }
 
-    // componentDidUpdate(prevProps, prevState) {
-    //     console.log("Component did update")
-    // }
-
     handleClick = () => {
         // debugger
         this.setState({

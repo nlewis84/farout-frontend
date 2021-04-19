@@ -78,7 +78,6 @@ div.picture-card-container {
 img.image {
   width: 100%;
   max-height: 320px;
-  /* overflow: hidden; */
   object-fit: cover;
   margin: 0 0 1rem 0;
   border-radius: 5px 5px 0 0;
@@ -134,7 +133,6 @@ button {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   transition: all 0.3s ease-in-out;
-  /* box-shadow: 0 4px 4px #9AA5B5; */
 }
 
 button:focus {

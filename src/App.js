@@ -1,19 +1,12 @@
 import './App.css';
 import React from 'react';
-// import { connect } from 'react-redux';
-// import PictureCardContainer from './containers/PictureCardContainer';
 import AppTitle from './components/AppTitle';
 import TopFivePictures from './components/TopFivePictures';
 import NewestPictures from './components/NewestPictures';
 import VotePictures from './components/VotePictures';
-// import { fetchPictures } from './actions/fetchPictures';
 import { Route, Link } from 'react-router-dom';
 
 class App extends React.Component {
-
-  // componentDidMount() {
-  //   this.props.fetchPictures()
-  // }
 
   render() {
     // debugger
@@ -25,13 +18,6 @@ class App extends React.Component {
           <Link className="large-button" to="/newest">Newest</Link>
         </div>
         <AppTitle />
-        {/* <Route path='/vote'>
-          <div className="container">
-            {this.props.pictures.map((picture) =>
-              <PictureCardContainer key={picture.id} picture={picture} />
-            )}
-          </div>
-        </Route> */}
         <Route path='/vote' component={VotePictures} />
         <Route path='/top5' component={TopFivePictures} />
         <Route path='/newest' component={NewestPictures} />
@@ -40,12 +26,5 @@ class App extends React.Component {
   }
 }
 
-// const mapStateToProps = state => {
-//   return {
-//     pictures: state.pictures
-//   }
-// }
-
-// export default connect(mapStateToProps, { fetchPictures })(App)
 export default App;
 
