@@ -8,9 +8,9 @@ class PictureCardContainer extends Component {
     render() {
         return (
             <div className="picture-card-container">
-                <Image key={this.props.index} picture={this.props.picture} />
-                <VoteInterfaceContainer key={this.props.index} vote={this.props.picture.vote} />
-                <ImageInformation key={this.props.index} picture={this.props.picture} />
+                <Image key={this.props.id} picture={this.props.picture} />
+                <VoteInterfaceContainer key={this.props.id} vote={this.props.picture.vote} />
+                <ImageInformation key={this.props.id} picture={this.props.picture} />
             </div>
         )
     }

@@ -26,8 +26,8 @@ class App extends React.Component {
         <AppTitle />
         <Route path='/vote'>
           <div className="container">
-            {this.props.pictures.map((picture, index) =>
-              <PictureCardContainer key={index} picture={picture} />
+            {this.props.pictures.map((picture) =>
+              <PictureCardContainer key={picture.id} picture={picture} />
             )}
           </div>
         </Route>

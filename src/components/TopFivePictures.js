@@ -13,8 +13,8 @@ class TopFivePictures extends React.Component {
         // debugger
         return (
             <div className="container">
-                {this.props.pictures.map((picture, index) =>
-                    <PictureCardContainer key={index} picture={picture} />
+                {this.props.pictures.map((picture) =>
+                    <PictureCardContainer key={picture.id} picture={picture} />
                 )}
             </div>
         )

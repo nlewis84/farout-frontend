@@ -9,7 +9,14 @@ class NewestPictures extends React.Component {
     }
 
     render() {
-        return "newest";
+        // debugger
+        return (
+            <div className="container">
+                {this.props.pictures.map((picture) =>
+                    <PictureCardContainer key={picture.id} picture={picture} />
+                )}
+            </div>
+        )
     }
 }
 
