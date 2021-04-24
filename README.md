@@ -4,7 +4,7 @@ Welcome to the Far Out web application! This project was bootstrapped with [Crea
 
 ## Installation
 
-- Download or clone this project as well as the [Far Out Backend project] (https://github.com/nlewis84/farout-backend)
+- Download or clone this project as well as the [Far Out Backend project](https://github.com/nlewis84/farout-backend)
 
 ## Usage
 
