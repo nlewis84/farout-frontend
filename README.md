@@ -13,9 +13,8 @@ Welcome to the Far Out web application! This project was bootstrapped with [Crea
 - Run `npm start`
 - This will host the app and open a browser window to display it. If the browser doesn't open, but the server started correctly, you can use the links that appear in the terminal to access the app. They should look something like the following:
 
-`Local:            http://localhost:3000/`
-
-`On Your Network:  http://192.168.1.5:3000/server`
+```Local:            http://localhost:3000/
+On Your Network:  http://192.168.1.5:3000/server```
 - Ensure that the backend is installed and that the Rails server is running
 
 ## Contributing
