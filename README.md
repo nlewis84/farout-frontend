@@ -24,4 +24,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/nlewis
 
 ## Code of Conduct
 
-Everyone interacting in the Band-Audition project's codebases, and issue trackers is expected to follow the [code of conduct](https://github.com/nlewis84/farout-frontend/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Far Out project's codebases, and issue trackers is expected to follow the [code of conduct](https://github.com/nlewis84/farout-frontend/blob/master/CODE_OF_CONDUCT.md).
