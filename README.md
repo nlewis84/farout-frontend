@@ -2,9 +2,13 @@
 
 Welcome to the Far Out web application! This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It utilizes a Rails API and a React frontend. It is an interface for viewing and voting on pictures from the NASA Astronomy Photo of the Day. Votes are persisted to the database and several routes exist to display 2 random pictures, the top 5 pictures, and the most recent picture.
 
+## :satellite: Video Demo
+
+[See it in action here!](https://youtu.be/3SRwopQNobY)
+
 ## :milky_way: Installation
 
-- Download or clone this project as well as the [Far Out Backend project](https://github.com/nlewis84/farout-backend)
+Download or clone this project as well as the [Far Out Backend project](https://github.com/nlewis84/farout-backend)
 
 ## :flying_saucer: Usage
 
