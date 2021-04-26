@@ -4,7 +4,9 @@ Welcome to the Far Out web application! This project was bootstrapped with [Crea
 
 ## :satellite: Video Demo
 
-[See it in action here!](https://youtu.be/3SRwopQNobY)
+- Click the picture below to see a video demo!
+
+[![Far Out Home Screen](http://img.youtube.com/vi/2iOHbz3mj1I/0.jpg)](http://www.youtube.com/watch?v=2iOHbz3mj1I)
 
 ## :milky_way: Installation
 
