@@ -17,7 +17,7 @@ Welcome to the Far Out web application! This project was bootstrapped with [Crea
 Local:            http://localhost:3000/
 On Your Network:  http://192.168.1.5:3000/server
 ```
-- Ensure that the backend is installed and that the Rails server is running
+- Ensure that the [backend](https://github.com/nlewis84/farout-backend) is installed and that the Rails server is running
 
 ## :artificial_satellite: Contributing
 
