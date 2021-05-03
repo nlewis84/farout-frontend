@@ -1,7 +1,7 @@
 export const increaseVoteCount = (data) => {
     // debugger
     return (dispatch) => {
-        fetch(`https://farout-api.herokuapp.com/api/v1/pictures/${data.pictureId}/votes/${data.pictureId}`, {
+        fetch(`http://localhost:3000/api/v1/pictures/${data.pictureId}/votes/${data.pictureId}`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
