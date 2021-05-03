@@ -1,5 +1,5 @@
 export const increaseVoteCount = (data) => {
-    // debugger
+    debugger
     return (dispatch) => {
         fetch(`http://localhost:3000/api/v1/pictures/${data.pictureId}/votes/${data.pictureId}`, {
             headers: {

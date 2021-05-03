@@ -1,7 +1,7 @@
 :root {
   --size1: 67.34px;
   --size2: 50.52px;
-  --size3: 37.90px;
+  --size3: 37.9px;
   --size4: 28.43px;
   --size5: 21.33px;
   --size6: 16px;
@@ -49,21 +49,21 @@
 }
 
 body {
-  background-color: #D0E3FF;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #d0e3ff;
+  font-family: "Open Sans", sans-serif;
 }
 
 #title {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
   font-size: var(--size1);
-  color: #5F008B;
-  filter: drop-shadow(-3px 3px 3px #F919C7);
+  color: #5f008b;
+  filter: drop-shadow(-3px 3px 3px #f919c7);
   margin: 3rem 0 0 0;
 }
 
 p.tagline {
-  color: #5F008B;
-  filter: drop-shadow(-3px 3px 15px #5F008B);
+  color: #5f008b;
+  filter: drop-shadow(-3px 3px 15px #5f008b);
 }
 
 div.container {
@@ -75,9 +75,9 @@ div.container {
 
 div.picture-card-container {
   flex: 0 1 calc(25% - 1em);
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 5px;
-  filter: drop-shadow(0 .4rem .3rem rgba(0, 0, 0, .50));
+  filter: drop-shadow(0 0.4rem 0.3rem rgba(0, 0, 0, 0.5));
   margin: 0 1rem 1rem 1rem;
 }
 
@@ -92,7 +92,7 @@ img.image {
 
 img.image:hover {
   max-height: 1000px;
-  transition: all .25s ease-in;
+  transition: all 0.25s ease-in;
 }
 
 div.information {
@@ -111,7 +111,8 @@ p {
   font-size: var(--size6);
 }
 
-div.information h2, div.information h3 {
+div.information h2,
+div.information h3 {
   text-align: center;
 }
 
@@ -133,9 +134,13 @@ button {
   width: 100%;
   height: 2.5rem;
   color: white;
-  background: linear-gradient(90deg, rgba(208,227,255,1) 10%, rgba(44,126,172,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(208, 227, 255, 1) 10%,
+    rgba(44, 126, 172, 1) 100%
+  );
   border: 0;
-  border-right: 17px solid #739AB0;
+  border-right: 17px solid #739ab0;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   transition: all 0.3s ease-in-out;
@@ -159,7 +164,11 @@ button:hover {
   width: 100%;
   height: 2.5rem;
   color: white;
-  background: linear-gradient(90deg, rgba(208,227,255,1) 10%, rgba(44,126,172,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(208, 227, 255, 1) 10%,
+    rgba(44, 126, 172, 1) 100%
+  );
   border: 0;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -176,13 +185,30 @@ button:hover {
   margin: 0 0 0 1rem;
 }
 
-div.counter-container {
+div.picture-card-container > div.counter-container {
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  font-size: var(--size5);
+  width: 93%;
+  height: 2.5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(208, 227, 255, 1) 10%,
+    rgba(44, 126, 172, 1) 100%
+  );
+}
+
+div.vote-interface > div.counter-container {
   margin: 0 1rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #2C7EAC;
+  background-color: #2c7eac;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -194,7 +220,7 @@ p.counter {
 /* flexbox media queries */
 
 @media all and (min-width: 1600px) {
-  div.container  {
-      flex-direction: row;
+  div.container {
+    flex-direction: row;
   }
 }
