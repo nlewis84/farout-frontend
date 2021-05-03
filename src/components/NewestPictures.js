@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchNewest } from '../actions/fetchNewest';
-import PictureCardContainer from '../containers/PictureCardContainer';
+import PictureCardNoVoteContainer from '../containers/PictureCardNoVoteContainer';
 
 class NewestPictures extends React.Component {
     componentDidMount() {
@@ -13,7 +13,7 @@ class NewestPictures extends React.Component {
         return (
             <div className="container">
                 {this.props.pictures.map((picture) =>
-                    <PictureCardContainer key={picture.id} picture={picture} />
+                    <PictureCardNoVoteContainer key={picture.id} picture={picture} />
                 )}
             </div>
         )
