@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchNewest } from '../actions/fetchNewest';
-import PictureCardNoVoteContainer from '../containers/PictureCardNoVoteContainer';
+import { fetchTopFive } from '../actions/fetchTopFive';
+import PictureCardNoVoteContainer from '../components/PictureCardNoVoteContainer';
 
-class NewestPictures extends React.Component {
+class TopFivePictures extends React.Component {
     componentDidMount() {
-        this.props.fetchNewest()
+        this.props.fetchTopFive()
     }
 
     render() {
@@ -26,4 +26,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, { fetchNewest })(NewestPictures)
+export default connect(mapStateToProps, { fetchTopFive })(TopFivePictures)

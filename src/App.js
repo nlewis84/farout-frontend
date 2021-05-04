@@ -2,9 +2,9 @@ import './App.css';
 import React from 'react';
 import AppTitle from './components/AppTitle';
 import AppTagline from './components/AppTagline';
-import TopFivePictures from './components/TopFivePictures';
-import NewestPictures from './components/NewestPictures';
-import VotePictures from './components/VotePictures';
+import TopFivePictures from './containers/TopFivePictures';
+import NewestPictures from './containers/NewestPictures';
+import VotePictures from './containers/VotePictures';
 import { Route, Link } from 'react-router-dom';
 
 class App extends React.Component {
