@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Image from '../components/Image';
-import ImageInformation from '../components/ImageInformation';
+import Image from './Image';
+import ImageInformation from './ImageInformation';
 import VoteInterfaceContainer from '../containers/VoteInterfaceContainer';
 
 class PictureCardContainer extends Component {
