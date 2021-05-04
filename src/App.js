@@ -2,9 +2,9 @@ import './App.css';
 import React from 'react';
 import AppTitle from './components/AppTitle';
 import AppTagline from './components/AppTagline';
-import TopFivePictures from './containers/TopFivePictures';
-import NewestPictures from './containers/NewestPictures';
-import VotePictures from './containers/VotePictures';
+import TopFivePicturesContainer from './containers/TopFivePicturesContainer';
+import NewestPicturesContainer from './containers/NewestPicturesContainer';
+import VotePicturesContainer from './containers/VotePicturesContainer';
 import { Route, Link } from 'react-router-dom';
 
 class App extends React.Component {
@@ -20,9 +20,9 @@ class App extends React.Component {
         </div>
         <AppTitle />
         <AppTagline />
-        <Route path='/vote' component={VotePictures} />
-        <Route path='/top5' component={TopFivePictures} />
-        <Route path='/newest' component={NewestPictures} />
+        <Route path='/vote' component={VotePicturesContainer} />
+        <Route path='/top5' component={TopFivePicturesContainer} />
+        <Route path='/newest' component={NewestPicturesContainer} />
       </div>
     );
   }
