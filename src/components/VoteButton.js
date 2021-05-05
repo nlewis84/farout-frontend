@@ -27,7 +27,7 @@ class VoteButton extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.props.handleClick()}>VOTE</button>
+                <button onClick={this.props.handleClick}>VOTE</button>
             </div>
         )
     }
