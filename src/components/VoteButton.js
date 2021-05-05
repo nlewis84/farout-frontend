@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { increaseVoteCount } from '../actions/increaseVoteCount';
+// import { connect } from 'react-redux';
+// import { increaseVoteCount } from '../actions/increaseVoteCount';
 
 class VoteButton extends Component {
     constructor(props) {
@@ -13,24 +13,25 @@ class VoteButton extends Component {
         // debugger
     }
 
-    handleClick = () => {
-        // debugger
-        this.setState({
-            ...this.state,
-            count: this.props.vote.count + 1
-        }, () => {
-            this.props.increaseVoteCount(this.state);
-            // debugger
-        })
-    }
+    // handleClick = () => {
+    //     // debugger
+    //     this.setState({
+    //         ...this.state,
+    //         count: this.props.vote.count + 1
+    //     }, () => {
+    //         this.props.increaseVoteCount(this.state);
+    //         // debugger
+    //     })
+    // }
 
     render() {
         return (
             <div>
-                <button onClick={this.handleClick}>VOTE</button>
+                <button onClick={this.props.handleClick()}>VOTE</button>
             </div>
         )
     }
 }
 
-export default connect(null, { increaseVoteCount })(VoteButton);
+export default VoteButton;
+// export default connect(null, { increaseVoteCount })(VoteButton);
