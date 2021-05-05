@@ -3,7 +3,7 @@ import Image from './Image';
 import ImageInformation from './ImageInformation';
 import VoteInterfaceContainer from '../containers/VoteInterfaceContainer';
 
-class PictureCardContainer extends Component {
+class PictureCard extends Component {
     render() {
         return (
             <div className="picture-card-container">
@@ -15,4 +15,4 @@ class PictureCardContainer extends Component {
     }
 }
 
-export default PictureCardContainer;
+export default PictureCard;

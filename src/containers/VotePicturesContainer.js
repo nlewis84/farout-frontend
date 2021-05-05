@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchPictures } from '../actions/fetchPictures';
-import PictureCardContainer from '../components/PictureCardContainer';
+import PictureCard from '../components/PictureCard';
 
-class VotePictures extends React.Component {
+class VotePicturesContainer extends React.Component {
     componentDidMount() {
         this.props.fetchPictures()
     }
@@ -13,7 +13,7 @@ class VotePictures extends React.Component {
         return (
             <div className="container">
                 {this.props.pictures.map((picture) =>
-                    <PictureCardContainer key={picture.id} picture={picture} />
+                    <PictureCard key={picture.id} picture={picture} />
                 )}
             </div>
         )
@@ -26,4 +26,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, { fetchPictures })(VotePictures)
+export default connect(mapStateToProps, { fetchPictures })(VotePicturesContainer)

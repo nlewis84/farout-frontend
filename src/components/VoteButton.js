@@ -27,10 +27,12 @@ class VoteButton extends Component {
     render() {
         return (
             <div>
+                {/* <button onClick={this.props.handleClick}>VOTE</button> */}
                 <button onClick={this.handleClick}>VOTE</button>
             </div>
         )
     }
 }
 
+// export default VoteButton;
 export default connect(null, { increaseVoteCount })(VoteButton);

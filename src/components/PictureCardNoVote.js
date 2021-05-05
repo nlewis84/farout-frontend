@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Image from '../components/Image';
-import ImageInformation from '../components/ImageInformation';
-import VoteCounter from '../components/VoteCounter';
+import Image from './Image';
+import ImageInformation from './ImageInformation';
+import VoteCounter from './VoteCounter';
 
-class PictureCardNoVoteContainer extends Component {
+class PictureCardNoVote extends Component {
     render() {
         return (
             <div className="picture-card-container">
@@ -15,4 +15,4 @@ class PictureCardNoVoteContainer extends Component {
     }
 }
 
-export default PictureCardNoVoteContainer;
+export default PictureCardNoVote;
