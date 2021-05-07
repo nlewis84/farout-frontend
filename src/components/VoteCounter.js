@@ -4,7 +4,7 @@ const VoteCounter = props => {
     return (
         <div className="counter-container">
             <p className="counter">
-                {props.vote.count} votes
+                {props.vote.count} {props.vote.count === 1 ? "vote" : "votes"}
             </p>
         </div>
     )
