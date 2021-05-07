@@ -157,6 +157,7 @@ button:hover {
 
 .large-button {
   appearance: auto;
+  display: block;
   cursor: default;
   box-sizing: border-box;
   padding: 1px 6px;
