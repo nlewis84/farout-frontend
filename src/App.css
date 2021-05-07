@@ -74,7 +74,7 @@ div.container {
 }
 
 div.picture-card-container {
-  flex: 0 1 calc(25% - 1em);
+  flex: 0 1 calc(20% - 1em);
   background-color: #fff;
   border-radius: 5px;
   filter: drop-shadow(0 0.4rem 0.3rem rgba(0, 0, 0, 0.5));
@@ -219,8 +219,13 @@ p.counter {
 
 /* flexbox media queries */
 
-@media all and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
   div.container {
     flex-direction: row;
+    /* flex-wrap: wrap; */
+  }
+
+  div.picture-card-container {
+    flex: 0 1 calc(45% - 1em);
   }
 }
