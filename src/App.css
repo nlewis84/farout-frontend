@@ -219,7 +219,7 @@ p.counter {
 
 /* flexbox media queries */
 
-@media all and (min-width: 1600px) {
+@media all and (min-width: 1400px) {
   div.container {
     flex-direction: row;
   }
