@@ -219,7 +219,18 @@ p.counter {
 
 /* flexbox media queries */
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 600px) {
+  div.container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  div.picture-card-container {
+    flex: 0 1 calc(100% - 1em);
+  }
+}
+
+@media only screen and (min-width: 1675x) {
   div.container {
     flex-direction: row;
     flex-wrap: wrap;
