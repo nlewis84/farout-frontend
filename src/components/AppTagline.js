@@ -3,7 +3,7 @@ import React from 'react';
 const AppTagline = () => {
     return (
         <div>
-            <p className="tagline">Space was cool before it mattered</p>
+            <p className="tagline">Vote on your favorite NASA photos!</p>
         </div>
     )
 }
