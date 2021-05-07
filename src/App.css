@@ -186,14 +186,13 @@ button:hover {
 }
 
 div.picture-card-container > div.counter-container {
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   border-radius: 5px;
   font-size: 21.33px;
-  width: 93%;
   height: 2.5rem;
   background: linear-gradient(
     90deg,
