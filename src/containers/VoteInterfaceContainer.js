@@ -1,41 +1,41 @@
 import React, { Component } from 'react';
 import VoteButton from '../components/VoteButton';
 import VoteCounter from '../components/VoteCounter';
-// import { connect } from 'react-redux';
-// import { increaseVoteCount } from '../actions/increaseVoteCount';
+import { connect } from 'react-redux';
+import { increaseVoteCount } from '../actions/increaseVoteCount';
 
 class VoteInterfaceContainer extends Component {
-    // constructor(props) {
-    //     super(props);
+    constructor(props) {
+        super(props);
 
-    //     this.state = {
-    //         count: '',
-    //         pictureId: props.vote.picture_id
-    //     };
-    //     // debugger
-    // }
+        this.state = {
+            count: '',
+            pictureId: props.vote.picture_id
+        };
+
+        this.handleClick = this.handleClick.bind(this);
+    }
 
     // handleClick = () => {
-    //     // debugger
-    //     this.setState({
-    //         ...this.state,
-    //         count: this.props.vote.count + 1
-    //     }, () => {
-    //         this.props.increaseVoteCount(this.state);
-    //         // debugger
-    //     })
-    // }
+    handleClick() {
+        this.setState({
+            ...this.state,
+            count: this.props.vote.count + 1
+        }, () => {
+            this.props.increaseVoteCount(this.state);
+        })
+    }
 
     render() {
         return (
             <div className="vote-interface">
-                <VoteButton vote={this.props.vote} />
-                {/* <VoteButton vote={this.props.vote} handleClick={this.props.handleClick()} /> */}
+                {/* <VoteButton vote={this.props.vote} /> */}
+                <VoteButton vote={this.props.vote} handleClick={this.handleClick} />
                 <VoteCounter vote={this.props.vote} />
             </div>
         )
     }
 }
 
-// export default connect(null, { increaseVoteCount })(VoteInterfaceContainer);
-export default VoteInterfaceContainer;
+export default connect(null, { increaseVoteCount })(VoteInterfaceContainer);
+// export default VoteInterfaceContainer;
