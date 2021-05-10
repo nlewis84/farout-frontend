@@ -12,7 +12,7 @@ class TopFivePicturesContainer extends React.Component {
         // debugger
         return (
             <div className="container">
-                {this.props.pictures.map((picture) =>
+                {this.props.topFivePictures.map((picture) =>
                     <PictureCardNoVote key={picture.id} picture={picture} />
                 )}
             </div>
@@ -22,7 +22,9 @@ class TopFivePicturesContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        pictures: state.pictures
+        picture: state.picture,
+        pictures: state.pictures,
+        topFivePictures: state.topFivePictures
     }
 }
 
