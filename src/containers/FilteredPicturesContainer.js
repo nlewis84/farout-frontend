@@ -1,10 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-// import { filterPictures } from '../actions/filterPictures';
-// import PictureCardNoVote from '../components/PictureCardNoVote';
 import Image from '../components/Image';
 
-class FilterPicturesContainer extends React.Component {
+class FilteredPicturesContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {value: ''};
@@ -19,7 +17,6 @@ class FilterPicturesContainer extends React.Component {
     render() {
         const searchResults = this.props.filteredPictures.filter(picture => picture.explanation.includes(this.state.value))
 
-        // debugger
         return (
             <>
                 <div className="search">
@@ -37,11 +34,9 @@ class FilterPicturesContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        newestPictures: state.newestPictures,
-        pictures: state.pictures,
-        topFivePictures: state.topFivePictures,
+        ...state,
         filteredPictures: state.filteredPictures
     }
 }
 
-export default connect(mapStateToProps)(FilterPicturesContainer)
+export default connect(mapStateToProps)(FilteredPicturesContainer)

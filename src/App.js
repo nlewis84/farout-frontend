@@ -5,7 +5,7 @@ import AppTagline from './components/AppTagline';
 import TopFivePicturesContainer from './containers/TopFivePicturesContainer';
 import NewestPicturesContainer from './containers/NewestPicturesContainer';
 import VotePicturesContainer from './containers/VotePicturesContainer';
-import FilterPicturesContainer from './containers/FilterPicturesContainer';
+import FilteredPicturesContainer from './containers/FilteredPicturesContainer';
 
 import { Route, Link } from 'react-router-dom';
 
@@ -26,7 +26,7 @@ class App extends React.Component {
         <Route path='/vote' component={VotePicturesContainer} />
         <Route path='/top5' component={TopFivePicturesContainer} />
         <Route path='/newest' component={NewestPicturesContainer} />
-        <Route path='/filter' component={FilterPicturesContainer} />
+        <Route path='/filter' component={FilteredPicturesContainer} />
       </div>
     );
   }

@@ -22,10 +22,8 @@ class TopFivePicturesContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        newestPictures: state.newestPictures,
-        pictures: state.pictures,
-        topFivePictures: state.topFivePictures,
-        filteredPictures: state.filteredPictures
+        ...state,
+        topFivePictures: state.topFivePictures
     }
 }
 

@@ -9,12 +9,14 @@ import reportWebVitals from './reportWebVitals';
 import reducer from './reducers/reducer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { filterPictures } from './actions/filterPictures';
+import { fetchNewest } from './actions/fetchNewest';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
 
 store.dispatch(filterPictures())
+store.dispatch(fetchNewest())
 
 ReactDOM.render(
   <Provider store={store}>
