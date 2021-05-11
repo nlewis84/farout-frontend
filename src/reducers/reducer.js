@@ -1,4 +1,4 @@
-export default function reducer(state = { picture: [], topFivePictures: [], pictures: [] }, action) {
+export default function reducer(state = { newestPictures: [], topFivePictures: [], pictures: [], filteredPictures: []}, action) {
     // debugger
     switch (action.type) {
         case 'FETCH_PICTURES':
@@ -20,10 +20,15 @@ export default function reducer(state = { picture: [], topFivePictures: [], pict
                 topFivePictures: action.payload 
             }
         case 'FETCH_NEWEST':
-            debugger
             return { 
                 ...state, 
-                picture: action.payload 
+                newestPictures: action.payload 
+            }
+        case 'FILTER_PICTURES':
+            // debugger
+            return { 
+                ...state, 
+                filteredPictures: action.payload 
             }
         default:
             return state;

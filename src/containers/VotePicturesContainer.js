@@ -22,9 +22,11 @@ class VotePicturesContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        picture: state.picture,
-        pictures: state.pictures,
-        topFivePictures: state.topFivePictures
+        ...state,
+        newestPictures: state.newestPictures,
+        // pictures: state.pictures,
+        // topFivePictures: state.topFivePictures,
+        // filteredPictures: state.filteredPictures
     }
 }
 
