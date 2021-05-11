@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { filterPictures } from '../actions/filterPictures';
+// import { filterPictures } from '../actions/filterPictures';
 // import PictureCardNoVote from '../components/PictureCardNoVote';
 import Image from '../components/Image';
 
@@ -12,10 +12,6 @@ class FilterPicturesContainer extends React.Component {
         this.handleChange = this.handleChange.bind(this);
     }
     
-    componentDidMount() {
-        this.props.filterPictures()
-    }
-
     handleChange(event) {
         this.setState({value: event.target.value});
     }
@@ -48,4 +44,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, { filterPictures })(FilterPicturesContainer)
+export default connect(mapStateToProps)(FilterPicturesContainer)

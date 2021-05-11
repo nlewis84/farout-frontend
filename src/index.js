@@ -8,10 +8,13 @@ import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
 import reducer from './reducers/reducer';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { filterPictures } from './actions/filterPictures';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
+
+store.dispatch(filterPictures())
 
 ReactDOM.render(
   <Provider store={store}>
