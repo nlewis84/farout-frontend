@@ -9,7 +9,6 @@ class VotePicturesContainer extends React.Component {
     }
 
     render() {
-        // debugger
         return (
             <div className="container">
                 {this.props.pictures.map((picture) =>
@@ -22,7 +21,8 @@ class VotePicturesContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        pictures: state.pictures
+        ...state,
+        newestPictures: state.newestPictures
     }
 }
 

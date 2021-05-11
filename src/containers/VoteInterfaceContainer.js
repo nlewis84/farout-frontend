@@ -16,7 +16,6 @@ class VoteInterfaceContainer extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    // handleClick = () => {
     handleClick() {
         this.setState({
             ...this.state,
@@ -29,7 +28,6 @@ class VoteInterfaceContainer extends Component {
     render() {
         return (
             <div className="vote-interface">
-                {/* <VoteButton vote={this.props.vote} /> */}
                 <VoteButton vote={this.props.vote} handleClick={this.handleClick} />
                 <VoteCounter vote={this.props.vote} />
             </div>
@@ -38,4 +36,3 @@ class VoteInterfaceContainer extends Component {
 }
 
 export default connect(null, { increaseVoteCount })(VoteInterfaceContainer);
-// export default VoteInterfaceContainer;

@@ -1,6 +1,7 @@
 import React from 'react';
 
 const VoteCounter = props => {
+    // debugger
     return (
         <div className="counter-container">
             <p className="counter">

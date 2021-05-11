@@ -1,18 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchNewest } from '../actions/fetchNewest';
+// import { fetchNewest } from '../actions/fetchNewest';
 import PictureCardNoVote from '../components/PictureCardNoVote';
 
 class NewestPicturesContainer extends React.Component {
-    componentDidMount() {
-        this.props.fetchNewest()
-    }
+    // componentDidMount() {
+    //     this.props.fetchNewest()
+    // }
 
     render() {
         // debugger
         return (
             <div className="container">
-                {this.props.pictures.map((picture) =>
+                {this.props.newestPictures.map((picture) =>
                     <PictureCardNoVote key={picture.id} picture={picture} />
                 )}
             </div>
@@ -22,8 +22,9 @@ class NewestPicturesContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        pictures: state.pictures
+        ...state,
+        newestPictures: state.newestPictures
     }
 }
 
-export default connect(mapStateToProps, { fetchNewest })(NewestPicturesContainer)
+export default connect(mapStateToProps)(NewestPicturesContainer)
